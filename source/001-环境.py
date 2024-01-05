@@ -17,7 +17,7 @@
 
 # IDE插件
 # 1. Python语法支持:Python
-# 2. Python Lint:Flake8/Pylint
+# 2. Python Lint:Flake8
 # 3. Python代码格式化:Black Formatter
 
 # IDE settings.json Python相关配置
