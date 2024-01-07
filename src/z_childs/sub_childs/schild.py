@@ -1,0 +1,2 @@
+def green():
+    return "green"
