@@ -17,6 +17,7 @@ def main():
     print(Student)
     # 类也是对象,Python中,万物皆对象
     print(type(Student))
+    print(isinstance(Student, type))
     print(hex(id(Student)))
 
     # 实例化
