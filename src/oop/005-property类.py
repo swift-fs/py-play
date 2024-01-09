@@ -1,3 +1,4 @@
+# 参考:https://www.liujiangblog.com/course/python/46
 class Student:
     def __init__(self, name: str, age: int) -> None:
         self.name = name
