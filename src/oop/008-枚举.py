@@ -1,10 +1,19 @@
-from enum import Enum
+from enum import Enum, unique
 
 
 # 继承Enum
 class Gender(Enum):
     MALE = 0
     FEMALE = 1
+
+
+# 保证枚举唯一值
+@unique
+class Status(Enum):
+    SUCCESS = 200
+    FAIL = 500
+    # 会报错，上面200已被使用
+    # OK = 200
 
 
 class Student:
@@ -30,6 +39,13 @@ def main():
     stu.gender = Gender(0)
     print(stu.gender)
     print(Gender["MALE"] == Gender.MALE)
+
+    # 存储所有枚举值
+    print(Status.__members__)
+    print(Status.FAIL.name)
+
+    for k, v in Status.__members__.items():
+        print(f"{k} -> {v.value}")
 
 
 if __name__ == "__main__":
