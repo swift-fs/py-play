@@ -1,3 +1,4 @@
+# 参考:https://docs.python.org/zh-cn/3/howto/descriptor.html
 # descriptor
 # 挺重要的概念,很多开源库都会使用到
 # 描述符的定义很简单，实现了下列任意一个方法的 Python 对象就是一个描述符（descriptor）：
