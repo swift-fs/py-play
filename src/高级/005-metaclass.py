@@ -22,13 +22,13 @@ class MyMeta(type):
         cls_ = super().__new__(cls, *args)
         print(type(cls_))
         print(f"kwargs:{kwargs}")
-        # 动态定义类方法/对象属性
+        # 动态定义方法/属性
         if kwargs:
             for key, val in kwargs.items():
                 setattr(cls_, key, val)
         # 定义一个对象方法
         setattr(cls_, "hello", hello)
-        # 定义了一个类属性
+        # 定义了一个属性
         setattr(cls_, "static_age", 10)
         # 创建类
         return cls_
