@@ -1,0 +1,6 @@
+def greeting(self):
+    print("hello customer")
+
+
+abc = 100
+
