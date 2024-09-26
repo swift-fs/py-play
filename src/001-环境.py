@@ -29,3 +29,8 @@
 }
 """
 print("Python开发环境配置成功")
+
+import pendulum
+
+now = pendulum.now()
+print(now)
